@@ -1,0 +1,74 @@
+<!DOCTYPE>
+<html>
+    
+    <head>
+        
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src ="js/marioJS.js"></script>
+        <style>
+            .bgClass{
+                height: 600px;
+                width: 950px;
+                top: 150px;
+                background-image: url("img/bg_desert.png");
+                background-color: aqua;
+                overflow-y: hidden;
+                overflow-x: hidden;
+            }
+            .marioClass{
+                position : absolute;
+                height: 100px;
+                width:  50px;
+                top: 540px;                
+            }
+            .marioFlip {
+                 -moz-transform: scaleX(-1);
+                 -o-transform: scaleX(-1);
+                 -webkit-transform: scaleX(-1);
+                 transform: scaleX(-1);
+            }
+            .coinOne{
+                position:absolute;
+                top :540px;
+                left:1050px;
+                /*overflow-y: hidden;*/
+            }
+        </style>    
+    </head>
+    
+    <body>
+       
+       <div class="container">
+          
+          <div class="row">
+              
+              <div class="col-sm-12 col-md-12 col-lg-12 bgClass">
+                  
+                  <div id="mariO" class="marioClass">
+                      
+                      <img src="img/mario.gif" alt="">
+                  </div>
+                  <div class="coinOne">
+                    <img src="img/coins.gif" alt="">    
+                  </div>   
+                  
+              </div>
+             
+              
+          </div>
+          <audio autoplay>
+                <source src="sounds/mario.mp3" type="audio/mpeg">
+          </audio>
+          <div id="jumpMario">
+              
+          </div>
+          <div id="coinMario">
+              
+          </div>
+       </div>
+        
+    </body>
+    
+</html>
